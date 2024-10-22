@@ -1,0 +1,285 @@
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #f5f5f5;
+    line-height: 1.6;
+}
+
+h1 {
+    font-size: 60px;
+    text-align: center;
+    color: #2C3E50;
+    margin-top: 70px;
+    letter-spacing: 2px;
+}
+
+.navbar {
+    text-align: center;
+    margin: 20px 0;
+    background: rgb(25, 2, 140);
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.navbar button {
+    font-size: 18px;
+    padding: 12px 20px;
+    margin: 5px 15px;
+    cursor: pointer;
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+}
+
+.navbar button:hover {
+    background-color: white;
+    color: #007bff;
+    border: 2px solid #007bff;
+}
+
+section {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 120px 20px;
+    gap: 50px;
+}
+
+.content {
+    flex: 1;
+    font-size: 20px;
+    max-width: 800px;
+    padding: 20px;
+}
+
+.content h2 {
+    font-size: 36px;
+    color: #021e3d;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #0d0181;
+    display: inline-block;
+}
+
+.content p {
+    font-size: 18px;
+    color: #555;
+    text-align: justify;
+}
+
+.image {
+    flex: 1;
+    max-width: 600px;
+    min-width: 300px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+   
+}
+
+.image img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+#projects-summary {
+    background: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.05);
+    padding: 80px 0;
+}
+
+.content p {
+    font-size: 20px;
+    text-align: center;
+    color: #555;
+    margin-bottom: 40px;
+}
+
+.project-link {
+    font-size: 20px;
+    color: #007bff;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    margin: 15px 0;
+    transition: color 0.3s ease;
+}
+
+.project-link:hover {
+    color: #0056b3;
+}
+
+#contact {
+    background: linear-gradient(135deg, #76aee9, #b6efff);
+    color: white;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+#contact h2 {
+    color: white;
+}
+
+#contact p {
+    font-size: 22px;
+}
+
+.contact-content a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.contact-content a:hover {
+    color: #f1f1f1;
+}
+
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+    font-size: 14px;
+    margin-top: 20px;
+}
+
+
+<style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            background-color: #f5f5f5;
+            line-height: 1.6;
+        }
+
+        h1 {
+            font-size: 60px;
+            text-align: center;
+            color: #2C3E50;
+            margin-top: 70px;
+            letter-spacing: 2px;
+        }
+
+        .navbar {
+            text-align: center;
+            margin: 20px 0;
+            background: rgb(25, 2, 140);
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        .navbar button {
+            font-size: 18px;
+            padding: 12px 20px;
+            margin: 5px 15px;
+            cursor: pointer;
+            background-color: transparent;
+            color: white;
+            border: 2px solid white;
+            border-radius: 30px;
+            transition: all 0.3s ease;
+        }
+
+        .navbar button:hover {
+            background-color: white;
+            color: #007bff;
+            border: 2px solid #007bff;
+        }
+
+        section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 120px 20px;
+            gap: 30px;
+        }
+
+        .image-row {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            width: 100%;
+        }
+
+        .image-row img {
+            border-radius: 15px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .image-row img:first-child {
+            width: 500px; /* Larger width for the first image */
+        }
+
+        .image-row img:last-child {
+            width: 200px; /* Smaller width for the second image */
+        }
+
+        .content {
+            font-size: 20px;
+            max-width: 800px;
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* Rounded box styling with fixed height for uniform size */
+        .project-box {
+            background-color: #e1ebff; /* Light blue background */
+            border-radius: 15px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: left;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            height: 250px; /* Fixed height for all boxes */
+            width: 100%; /* Full width */
+            max-width: 800px; /* Maximum width */
+        }
+
+        .project-box h3 {
+            color: #021e3d;
+            font-size: 28px;
+            margin-bottom: 10px;
+        }
+
+        .project-box p {
+            font-size: 18px;
+            color: #000000;
+            text-align: justify;
+        }
+
+        .pdf-link {
+            font-size: 18px;
+            color: #0823bb;
+            text-decoration: none;
+            margin-top: 10px;
+            display: block;
+        }
+
+        .pdf-link:hover {
+            color: #1b00a0;
+        }
