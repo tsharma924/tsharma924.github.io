@@ -192,11 +192,11 @@ section {
         }
 
 .image-row img:first-child {
-    width: 500px; /* Larger width for the first image */
+    max-width: 500px; /* Larger width for the first image */
         }
 
 .image-row img:last-child {
-    width: 200px; /* Smaller width for the second image */
+    max-width: 200px; /* Smaller width for the second image */
         }
 
 .content {
