@@ -225,9 +225,9 @@ section {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 250px; /* Fixed height for all boxes */
+    height: 300px; /* Fixed height for all boxes */
     width: 100%; /* Full width */
-    max-width: 800px; /* Maximum width */
+    max-width: 900px; /* Maximum width */
         }
 
 .project-box h3 {
