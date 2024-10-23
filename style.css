@@ -88,8 +88,8 @@ section {
 }
 
 .image img {
-    width: 300px;
-    height: 300px;
+    max-width: 300px;
+    max-height: 300px;
     border-radius: 50%;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 }
