@@ -184,6 +184,7 @@ section {
     gap: 20px;
     justify-content: center;
     width: 100%;
+    flex-wrap: wrap;
         }
 
 .image-row img {
