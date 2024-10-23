@@ -226,7 +226,7 @@ section {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    max-height: 350px; /* Fixed height for all boxes */
+    max-height: 450px; /* Fixed height for all boxes */
     width: 100%; /* Full width */
     max-width: 900px; /* Maximum width */
         }
