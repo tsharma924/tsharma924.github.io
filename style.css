@@ -1,32 +1,32 @@
 
 
 #about {
-    display: flex;
-    flex-direction: row; /* Align items horizontally */
+    display: grid;
+    grid-template-columns: 1fr 2fr; 
+    grid-template-areas: 
+        "image content"; 
     align-items: center;
-    justify-content: space-between;
+    gap: 50px;
     padding: 120px 20px;
-    gap: 50px; /* Space between image and content */
 }
 
 .image {
-    flex: 1;
-    max-width: 400px; /* Adjusted width to fit better next to the content */
+    grid-area: image; 
+    max-width: 400px;
     min-width: 300px;
-    height: auto;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .image img {
-    max-width: 100%; /* Ensure the image fits within its container */
+    max-width: 100%; 
     border-radius: 50%;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .content {
-    flex: 2; /* Adjusted to take more space than the image */
+    grid-area: content; /* Assign content to the content area */
     font-size: 20px;
     max-width: 800px;
     padding: 20px;
@@ -44,6 +44,33 @@
     font-size: 18px;
     color: #555;
     text-align: justify;
+}
+
+@media screen and (max-width: 768px) {
+    #about {
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+            "image"
+            "content"; 
+        gap: 30px; 
+    }
+
+    .image {
+        max-width: 300px; 
+        margin: 0 auto; 
+    }
+
+    .content {
+        text-align: center; 
+    }
+
+    .content h2 {
+        font-size: 32px;
+    }
+
+    .content p {
+        font-size: 16px;
+    }
 }
 
 body {
@@ -241,12 +268,12 @@ section {
         }
 
 .image-row img:first-child {
-    max-width: 500px; /* Larger width for the first image */
+    max-width: 500px; /
     width: calc(40%-20px);
         }
 
 .image-row img:last-child {
-    max-width: 200px; /* Smaller width for the second image */
+    max-width: 200px; 
         }
 
 .content {
@@ -256,9 +283,8 @@ section {
     text-align: center;
         }
 
-        /* Rounded box styling with fixed height for uniform size */
 .project-box {
-    background-color: #e1ebff; /* Light blue background */
+    background-color: #e1ebff; 
     border-radius: 15px;
     padding: 20px;
     margin-bottom: 20px;
@@ -267,9 +293,9 @@ section {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    max-height: 900px; /* Fixed height for all boxes */
-    width: 100%; /* Full width */
-    max-width: 900px; /* Maximum width */
+    max-height: 900px; 
+    width: 100%; 
+    max-width: 900px; 
         }
 
 .project-box h3 {
